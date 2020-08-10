@@ -45,7 +45,6 @@ def hit?(initial_round)
   while answer != 'h' && answer != 's'
     invalid_command
     prompt_user
-    user_input = get_user_input
   end
   
   if answer = 'h' 
