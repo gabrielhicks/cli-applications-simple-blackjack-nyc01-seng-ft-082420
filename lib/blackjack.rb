@@ -41,10 +41,6 @@ def hit?(initial_round)
   prompt_user
   answer = get_user_input
   card3 = deal_card
-  if answer != 'h' && answer != 's'
-    prompt_user
-    return invalid_command
-  end
   if answer == 'h'
     card_total += card3
     return card_total
@@ -53,6 +49,7 @@ def hit?(initial_round)
     return card_total
   end
   card_total
+  binding.pry
 end
 
 
