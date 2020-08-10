@@ -48,13 +48,8 @@ def hit?(initial_round)
     
   elsif answer == 's'
     return card_total
-    
-  elsif answer != 's' && answer != 'h'
-    invalid_command
-    prompt_user
   end
   card_total
-  binding.pry
 end
 
 
