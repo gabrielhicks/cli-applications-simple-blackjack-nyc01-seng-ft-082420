@@ -30,7 +30,7 @@ def initial_round
   card_total
 end
 
-def invalid_command(prompt_user)
+def invalid_command
   puts "Please enter a valid command"
 end
 
