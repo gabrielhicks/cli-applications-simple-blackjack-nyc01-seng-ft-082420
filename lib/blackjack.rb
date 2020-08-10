@@ -41,6 +41,7 @@ def hit?(number)
     invalid_command
     prompt_user
     initial_round
+  end
 end
 
 def invalid_command
