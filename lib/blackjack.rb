@@ -42,7 +42,6 @@ def hit?(initial_round)
   answer = get_user_input
   card3 = deal_card
   if answer != 'h' && answer != 's'
-    invalid_command
     prompt_user
   end
   if answer == 'h'
