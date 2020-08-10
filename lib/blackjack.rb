@@ -37,19 +37,22 @@ def invalid_command
 end
 
 def hit?(initial_round)
-  card_total = initial_round
   prompt_user
+  card_total = initial_round
   answer = get_user_input
-  card3 = deal_card
-  if answer == 'h'
-    card_total += card3
-    return card_total
-    
-  elsif answer == 's'
-    return card_total
+  next_card = deal_card
+  
+  while answer != 'h' && answer != 's'
+    invalid_command
+    prompt_user
+    user_input = get_user_input
   end
+  
+  if user_input = 'h'
+    card_total += next_card
+  end
+  
   card_total
-  binding.pry
 end
 
 
