@@ -25,7 +25,7 @@ end
 def initial_round
   card1 = deal_card
   card2 = deal_card
-  card_total = card += card
+  card_total = card1 + card2
 end
 
 def hit?
