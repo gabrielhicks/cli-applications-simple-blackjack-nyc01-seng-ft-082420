@@ -35,7 +35,8 @@ def hit?(number)
   get_user_input
   if get_user_input == 's'
     return initial_round
-  else if get_user_input == 'h'
+  end 
+  if get_user_input == 'h'
     return initial_round + deal_card
   end
   if get_user_input != 's' || get_user_input != 'h'
