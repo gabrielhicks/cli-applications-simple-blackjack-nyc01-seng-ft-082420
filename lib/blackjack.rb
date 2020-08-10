@@ -34,7 +34,7 @@ def hit?(card_total)
   prompt_user
   answer = get_user_input
   if answer == 'h'
-    card_total + draw_card
+    draw_card
   end
   card_total
 end
