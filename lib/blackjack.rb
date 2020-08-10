@@ -41,7 +41,6 @@ def hit?(initial_round)
   prompt_user
   card_total = initial_round
   answer = get_user_input
-  next_card = deal_card
   
   while answer != 'h' && answer != 's'
     invalid_command
@@ -49,7 +48,7 @@ def hit?(initial_round)
   end
   
   if answer == 'h' 
-    card_total += next_card
+    card_total += deal_card
   end
   
   return card_total
