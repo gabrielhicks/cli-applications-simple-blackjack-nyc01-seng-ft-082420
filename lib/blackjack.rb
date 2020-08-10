@@ -47,7 +47,7 @@ def hit?(initial_round)
     prompt_user
   end
   
-  if answer = 'h' 
+  if answer == 'h' 
     return card_total + draw_card
   end
   
