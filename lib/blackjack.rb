@@ -34,7 +34,7 @@ def invalid_command
   puts "Please enter a valid command"
 end
 
-def hit?(card_total)
+def hit?
   prompt_user
   answer = get_user_input
   if answer == 'h'
