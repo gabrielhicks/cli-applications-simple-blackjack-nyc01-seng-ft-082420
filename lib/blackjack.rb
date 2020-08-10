@@ -33,7 +33,7 @@ end
 def hit?(answer)
   prompt_user
   get_user_input
-  if get_user_input == 'h'
+  if answer == 'h'
     card_total + draw_card
   end
   card_total
