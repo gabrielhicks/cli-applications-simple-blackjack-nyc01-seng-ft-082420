@@ -43,7 +43,6 @@ def hit?(number)
     puts invalid_command
     puts prompt_user
   end
-  initial_round
 end
 
 def invalid_command
