@@ -60,6 +60,10 @@ end
 #####################################################
 
 def runner
-  # code runner here
+  welcome
+  initial_round
+  prompt_user
+  hit?(initial_round)
+  
 end
     
