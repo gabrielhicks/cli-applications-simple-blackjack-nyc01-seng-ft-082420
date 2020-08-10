@@ -43,6 +43,7 @@ def hit?(initial_round)
   card3 = deal_card
   if answer != 'h' && answer != 's'
     invalid_command
+    prompt_user
   end
   if answer == 'h'
     card_total += card3
