@@ -53,7 +53,7 @@ def hit?(initial_round)
     return card_total
   end
   
-  card_total
+  return card_total
 end
 
 
