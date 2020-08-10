@@ -45,7 +45,7 @@ def hit?(initial_round)
     return card_total
     
   elsif answer == 's'
-    return
+    return card_total
     
   else
     invalid_command
