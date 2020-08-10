@@ -1,3 +1,5 @@
+require 'pry'
+
 def welcome
   puts "Welcome to the Blackjack Table"
 end
@@ -50,6 +52,7 @@ def hit?(initial_round)
   elsif answer != 's' && answer != 'h'
     invalid_command
     prompt_user
+    binding.pry
   end
   card_total
 end
