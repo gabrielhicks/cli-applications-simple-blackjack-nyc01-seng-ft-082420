@@ -39,7 +39,7 @@ def hit?(initial_round)
   prompt_user
   answer = get_user_input
   if answer == 'h'
-    card_total += deal_card
+    card_total + deal_card
     return card_total
   elsif answer == 's'
     return
