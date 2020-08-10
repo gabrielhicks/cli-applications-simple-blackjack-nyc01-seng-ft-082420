@@ -48,7 +48,7 @@ def hit?(initial_round)
   end
   
   if answer = 'h' 
-    return card_total + next_card
+    return card_total + draw_card
   end
   
   return card_total
