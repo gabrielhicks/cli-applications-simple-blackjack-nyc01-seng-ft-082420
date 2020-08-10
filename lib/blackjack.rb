@@ -49,7 +49,8 @@ def hit?(initial_round)
   end
   
   if user_input = 'h'
-    card_total + next_card
+    card_total += next_card
+    return card_total
   end
   
   card_total
