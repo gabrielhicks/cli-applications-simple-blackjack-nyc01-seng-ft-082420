@@ -40,7 +40,7 @@ def hit?(number)
     return initial_round + deal_card
   end
   invalid_command
-  initial_round
+  prompt_user
 end
 
 def invalid_command
