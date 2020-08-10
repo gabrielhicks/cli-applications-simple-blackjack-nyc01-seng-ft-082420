@@ -39,10 +39,8 @@ def hit?(number)
   if get_user_input == 'h'
     return initial_round + deal_card
   end
-  if get_user_input != 's' || get_user_input != 'h'
-    puts invalid_command
-    puts prompt_user
-  end
+  invalid_command
+  initial_round
 end
 
 def invalid_command
