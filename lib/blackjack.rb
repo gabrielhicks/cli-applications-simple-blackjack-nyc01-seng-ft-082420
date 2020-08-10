@@ -37,7 +37,8 @@ def hit?(number)
     return initial_round
   else if get_user_input == 'h'
     return initial_round + deal_card
-  else
+  end
+  if get_user_input != 's' || get_user_input != 'h'
     invalid_command
     prompt_user
   end
