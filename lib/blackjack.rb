@@ -40,6 +40,7 @@ def hit?(initial_round)
   answer = get_user_input
   if answer == 'h'
     card_total += deal_card
+    return card_total
   elsif answer == 's'
     return
   else
