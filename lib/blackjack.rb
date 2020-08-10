@@ -38,6 +38,7 @@ def hit?(initial_round)
   card_total = initial_round
   prompt_user
   answer = get_user_input
+  
   if answer == 'h'
     card_total + deal_card
     return card_total
