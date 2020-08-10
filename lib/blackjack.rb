@@ -41,7 +41,7 @@ def hit?(initial_round)
   if answer == 'h'
     card_total += deal_card
   elsif answer == 's'
-    return display_card_total(card_total)
+    return prompt_user
   else
     invalid_command
     prompt_user
