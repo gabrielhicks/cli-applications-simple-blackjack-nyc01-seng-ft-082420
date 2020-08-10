@@ -34,13 +34,17 @@ def hit?(number)
   prompt_user
   get_user_input
   if get_user_input == 's'
-    return
+    return initial_round
   else if get_user_input == 'h'
-    deal_card
+    return initial_round + deal_card
+  else
+    invalid_command
+    prompt_user
+    initial_round
 end
 
 def invalid_command
-  # code invalid_command here
+  puts "Please enter a valid command"
 end
 
 #####################################################
